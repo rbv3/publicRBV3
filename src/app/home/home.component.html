@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<div class="container color-dark">
+  <div class="col">
+  </div>
+</div>
+<div class="container color-light">
+  <div class="col">
+    <p class="sm">This is just a little game. Use the box below to write the required info</p>
+
+    <form>
+      <input type="text" class="txt" name="item" placeholder="{{placeText}}" [(ngModel)]="fieldText">
+      <input type="submit" class="btn" id="FormBtn" value="Submit" (click)="jumpLine()">
+    </form>
+  </div>
+  <div class="col">
+    <p class="text-container" *ngFor="let text of textArray; index as i; last as isLast">
+     {{text}} 
+     <span *ngIf="isLast && i<3">{{fieldText}}</span>  
+     <span *ngIf="isLast && i == 1">?</span>
+    </p>
+  </div>
+</div>

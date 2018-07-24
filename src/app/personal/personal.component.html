@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<div class="container color-dark">
+  <div class="col">  	
+  	<ul>	  
+	  <li><a id="subRouting" routerLink="../personal">Personal</a></li>
+	  <li><a id="subRouting" routerLink="../professional">Professional</a></li>
+	</ul>
+  </div>
+</div>
+<div class="container1 color-light">
+  <div class="col">  
+  	<img class="mySlides" src="/assets/images/a1.png">
+	<img class="mySlides" style="display: none;" src="/assets/images/a2.png">
+	<img class="mySlides" style="display: none;"  src="/assets/images/a3.png">
+	<img class="mySlides" style="display: none;" src="/assets/images/a4.png">
+	<img class="mySlides" style="display: none;" src="/assets/images/a5.png">
+	<img class="mySlides" style="display: none;" src="/assets/images/a6.png">
+	<img class="mySlides" style="display: none;" src="/assets/images/a7.png">
+	<img class="mySlides" style="display: none;" src="/assets/images/a8.png">
+	<img class="mySlides" style="display: none;" src="/assets/images/a9.png">
+	<img class="mySlides" style="display: none;" src="/assets/images/a10.png">
+	<img class="mySlides" style="display: none;" src="/assets/images/a11.png">
+	<button class="w3-button w3-display-left" (click)="plusDivs(-1)">&#10094;</button>
+	<button class="w3-button w3-display-right" (click) ="plusDivs(+1)">&#10095;</button>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
